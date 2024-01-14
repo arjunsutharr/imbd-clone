@@ -1,0 +1,24 @@
+.home-main {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+}
+
+nav {
+  background: transparent;
+}
+
+#suggesions-container {
+  margin-top: 1rem;
+}
+
+#suggestions {
+  border-radius: 10px;
+}
+
+@media (width <= 550px) {
+  .home-main {
+    height: 65vh;
+  }
+}

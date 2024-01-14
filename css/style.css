@@ -1,0 +1,223 @@
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+
+/* header section */
+
+nav {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #434343
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #434343,
+    #434343
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-brand {
+  /* color: white; */
+  font-weight: bold;
+}
+
+.nav-link {
+  color: lightgrey;
+  padding-bottom: 0 !important;
+}
+
+.nav-link:hover {
+  color: grey;
+  border-bottom: 3px solid grey;
+}
+
+.active {
+  color: white;
+  border-bottom: 3px solid white;
+  padding-bottom: 0 !important;
+}
+
+.active:hover {
+  color: white;
+  border-color: white;
+}
+
+/* main section */
+
+#suggestions {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#suggestions p,
+#suggestions i {
+  margin: 0;
+  cursor: pointer;
+}
+
+#suggestions:hover {
+  background-color: whitesmoke;
+}
+
+#suggestions p:hover {
+  text-decoration: underline;
+}
+
+#suggestions i:hover {
+  color: #ffab02;
+}
+
+.fa-star {
+  cursor: pointer;
+  color: #434343;
+}
+
+.fa-solid {
+  color: #ffab02;
+  transition: linear 0.3s;
+}
+
+.star-details {
+  margin-top: 2.3rem !important;
+  margin-right: 1rem;
+}
+
+/* seperate movie page  */
+
+.movie-details {
+  position: relative;
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #859398, #283048);
+
+  padding: 0 1rem 0 0;
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+
+  color: white;
+}
+
+.movie-screen-details > p {
+  color: lightgrey;
+}
+
+.movie-details-container {
+  height: 90vh;
+}
+
+.star-details {
+  position: absolute;
+  right: 1px;
+}
+
+/* favourite movie page */
+
+#fav-movies-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.fav-movie-details > p {
+  color: lightgrey;
+}
+
+.favMovie {
+  /* position: relative; */
+  display: flex;
+  gap: 1rem;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #434343,
+    #434343
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #434343,
+    #434343
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* padding: 0rem 1rem 0rem 0rem; */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.fav-movie-title {
+  cursor: pointer;
+}
+
+.remove-favourite {
+  /* position: absolute; */
+  margin-top: 0.1rem;
+  /* right: 1.5rem; */
+  cursor: pointer;
+}
+
+.lessThen-720px {
+  display: flex;
+}
+
+/* media quries for respnsiveness */
+
+@media (width <= 720px) {
+  .movie-details {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    /* width: 50%; */
+  }
+
+  .movie-details-container {
+    height: auto;
+  }
+
+  .lessThen-720px {
+    display: flex;
+  }
+
+  .star-details {
+    position: static;
+  }
+}
+
+@media (width <= 550px) {
+  .form {
+    width: 100% !important;
+  }
+
+  #fav-movies-page {
+    width: 100% !important;
+  }
+}
