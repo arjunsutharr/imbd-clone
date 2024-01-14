@@ -13,7 +13,7 @@ This project is a small-scale clone of the popular IMDb website, designed to all
 
 ## Getting Started
 
-1. See the project in action here:
+1. See the project in action here: https://imbb.netlify.app/
 2. Start exploring movies.
 
 ## Files
