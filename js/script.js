@@ -31,7 +31,7 @@ function inputHandler() {
 }
 
 async function fetchMovieData(moviename) {
-  const url = `http://www.omdbapi.com/?t=${moviename}&apikey=89c36d9d`;
+  const url = `https://www.omdbapi.com/?t=${moviename}&apikey=89c36d9d`;
   try {
     const response = await fetch(url);
     const result = await response.json();
